@@ -15,8 +15,7 @@ fn main() {
     visited.insert((0, 0));
 
     while f.read(&mut buffer).unwrap() > 0 {
-        let (pos_before, pos_other) = pos;
-        let (x, y) = pos_before;
+        let ((x, y), pos_other) = pos;
 
         let c = buffer[0] as char;
         
@@ -30,7 +29,7 @@ fn main() {
 
         pos = (pos_other, pos_after);
 
-        visited.insert((x, y));
+        visited.insert(pos_after);
     }
 
     println!("visited: {}", visited.len());
