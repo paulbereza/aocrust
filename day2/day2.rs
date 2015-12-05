@@ -18,7 +18,6 @@ fn required_for_line(line: String) -> (i64, i64) {
     let bits: Vec<&str> = line.trim().split('x').collect();
 
     assert!(bits.len() == 3, "malformed line \"{}\"");
-    println!("{} {} {} ", bits[0], bits[1], bits[2]);
 
     required_for_box(
         bits[0].parse().unwrap(),
