@@ -1,2 +1,4 @@
 *.input
 *.swp
+Cargo.lock
+target
