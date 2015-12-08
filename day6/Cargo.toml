@@ -2,3 +2,6 @@
 name = "day6"
 version = "0.1.0"
 authors = ["Paul Bereza <pbereza@xtxmarkets.com>"]
+
+[dependencies]
+regex = "0.1"
